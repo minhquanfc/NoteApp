@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminUi.AddNoteActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_addnote"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/blue_color">
+
+        <ImageButton
+            android:id="@+id/btnback_edit_note"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:background="@color/blue_color"
+            android:src="@drawable/btnback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/lexenddeca"
+            android:text="Chỉnh sửa"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_addnote"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/ed_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_ed"
+            android:fontFamily="@font/lexenddeca"
+            android:hint="Tiêu đề"
+            android:textColorHint="@color/txt_hint" />
+
+        <EditText
+            android:id="@+id/ed_des_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ed_title_edit"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_ed"
+            android:fontFamily="@font/lexenddeca"
+            android:hint="Mô tả"
+            android:textColorHint="@color/txt_hint" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_des_edit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lexenddeca"
+            android:text="Ảnh bìa"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_img_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_img">
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="24dp"-->
+            <!--                android:layout_height="24dp"-->
+            <!--                android:layout_centerInParent="true"-->
+            <!--                android:src="@drawable/anh" />-->
+            <TextView
+                android:id="@+id/tv_anh_note_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Chọn ảnh"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_img_edit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lexenddeca"
+            android:text="File PDF"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <RelativeLayout
+            android:id="@+id/layout_pdf_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt4"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_img">
+            <!--            <ImageView-->
+            <!--                android:layout_width="24dp"-->
+            <!--                android:layout_height="24dp"-->
+            <!--                android:src="@drawable/pdf"-->
+            <!--                android:layout_centerInParent="true"/>-->
+            <TextView
+                android:id="@+id/tv_file_pdf_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Chọn file"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/lexenddeca"
+        android:text="Sửa"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</RelativeLayout>

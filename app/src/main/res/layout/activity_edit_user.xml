@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminUi.AddNoteActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_addnote"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/blue_color">
+
+        <ImageButton
+            android:id="@+id/btnback_edit_user"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:background="@color/blue_color"
+            android:src="@drawable/btnback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/lexenddeca"
+            android:text="Chỉnh sửa"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_addnote"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/ed_name_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_ed"
+            android:fontFamily="@font/lexenddeca"
+            android:hint="Họ tên"
+            android:textColorHint="@color/txt_hint" />
+
+        <EditText
+            android:id="@+id/ed_email_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ed_name_user"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_ed"
+            android:fontFamily="@font/lexenddeca"
+            android:hint="Email"
+            android:textColorHint="@color/txt_hint" />
+        <LinearLayout
+            android:layout_below="@+id/ed_email_user"
+            android:id="@+id/spinner_role"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <RadioGroup
+                android:id="@+id/radio_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <RadioButton
+                    android:id="@+id/radio_Admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:checked="true"
+                    android:fontFamily="@font/lexenddeca"
+                    android:paddingLeft="8dp"
+                    android:text="Admin"
+                    android:textSize="14dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_User"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:selectAllOnFocus="true"
+                    android:text="User"
+                    android:fontFamily="@font/lexenddeca"
+                    android:textSize="14dp"/>
+            </RadioGroup>
+        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_below="@+id/spinner_role"-->
+<!--            android:id="@+id/spinner_active"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="wrap_content">-->
+<!--            <RadioGroup-->
+<!--                android:id="@+id/radio_active"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_gravity="center_vertical">-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radio_true"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:checked="true"-->
+<!--                    android:fontFamily="@font/lexenddeca"-->
+<!--                    android:paddingLeft="8dp"-->
+<!--                    android:text="True"-->
+<!--                    android:textSize="14dp" />-->
+<!--                <RadioButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/radio_lock"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:selectAllOnFocus="true"-->
+<!--                    android:text="false"-->
+<!--                    android:fontFamily="@font/lexenddeca"-->
+<!--                    android:textSize="14dp"/>-->
+<!--            </RadioGroup>-->
+<!--        </LinearLayout>-->
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_edit_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/lexenddeca"
+        android:text="Sửa"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</RelativeLayout>

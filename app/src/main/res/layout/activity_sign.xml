@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:id="@+id/txtSignUp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lexenddeca"
+        android:textColor="@color/blue_color"
+        android:layout_marginTop="102dp"
+        android:layout_marginLeft="36dp"
+        android:textSize="36dp"/>
+    <EditText
+        android:id="@+id/ed_name_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Họ và tên"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_below="@+id/txtSignUp"
+        android:layout_marginTop="78dp"
+        android:fontFamily="@font/lexenddeca"
+        android:textSize="14dp"
+        android:textColorHint="@color/txt_hint"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="13dp"
+        android:background="@drawable/bg_ed"/>
+    <EditText
+        android:id="@+id/ed_email_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_below="@+id/ed_name_sign_up"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/lexenddeca"
+        android:textSize="14dp"
+        android:textColorHint="@color/txt_hint"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="13dp"
+        android:background="@drawable/bg_ed"/>
+    <EditText
+        android:id="@+id/ed_pass_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Mật khẩu"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_below="@+id/ed_email_sign_up"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/lexenddeca"
+        android:textSize="14dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/txt_hint"
+        android:drawableStart="@drawable/pass"
+        android:drawablePadding="13dp"
+        android:background="@drawable/bg_ed"/>
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/ed_pass_sign_up"
+        android:text="Đăng ký"
+        android:textSize="16dp"
+        android:fontFamily="@font/lexenddeca"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:textStyle="bold"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/btn_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_sign_up"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_below="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã có tài khoản? "
+            android:fontFamily="@font/lexenddeca"
+            android:textColor="@color/blue_color"
+            android:textSize="14dp"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/txt_signup_login"
+            android:layout_below="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:fontFamily="@font/lexenddeca"
+            android:textColor="@color/blue_color"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+    </LinearLayout>
+</RelativeLayout>

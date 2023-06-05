@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminUi.NoteActivity"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/relativeLayout_doi_pass"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/blue_color">
+        <ImageButton
+            android:id="@+id/btnback_doi_pass"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:background="@color/blue_color"
+            android:src="@drawable/btnback" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lexenddeca"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Đổi mật khẩu"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/ed_pass_cu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_doi_pass"
+        android:background="@drawable/bg_ed"
+        android:hint="Mật khẩu cũ"
+        android:fontFamily="@font/lexenddeca"
+        android:textSize="14dp"
+        android:inputType="numberPassword"
+        android:layout_margin="20dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/ed_pass_moi"
+        android:inputType="numberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_pass_cu"
+        android:background="@drawable/bg_ed"
+        android:hint="Mật khẩu mới"
+        android:fontFamily="@font/lexenddeca"
+        android:textSize="14dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/ed_nhaplai_pass_moi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_pass_moi"
+        android:background="@drawable/bg_ed"
+        android:hint="Nhập lại mật khẩu mới"
+        android:inputType="numberPassword"
+        android:fontFamily="@font/lexenddeca"
+        android:textSize="14dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/btn_doipass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:text="Đổi mật khẩu"
+        android:textAllCaps="false"
+        android:fontFamily="@font/lexenddeca"
+        android:textColor="@color/white"
+        android:layout_below="@+id/ed_nhaplai_pass_moi"
+        android:layout_margin="20dp"/>
+</RelativeLayout>
